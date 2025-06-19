@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumya Ranjan Sethy - Sourcing Engineer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind gray-50 */
+            color: #334155; /* Tailwind gray-700 */
+        }
+        .container {
+            max-width: 1200px;
+        }
+        /* Custom styles for section titles */
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px; /* Space for the underline */
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 70%; /* Adjust width of the underline */
+            height: 3px; /* Thickness of the underline */
+            background-color: #1d4ed8; /* Tailwind blue-700 */
+            border-radius: 9999px; /* Rounded ends for the underline */
+        }
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-down {
+            animation: fadeInDown 0.6s ease-out forwards;
+        }
+
+        .animate-fade-in-right {
+            animation: fadeInRight 0.6s ease-out forwards;
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        /* Staggering delays for better effect */
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-wide rounded-md p-2 hover:bg-white hover:text-blue-700 transition duration-300">Soumya Ranjan</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-blue-200 transition duration-300">About</a>
+                <a href="#experience" class="hover:text-blue-200 transition duration-300">Experience</a>
+                <a href="#skills" class="hover:text-blue-200 transition duration-300">Skills</a>
+                <a href="#education" class="hover:text-blue-200 transition duration-300">Education</a>
+                <a href="#activities" class="hover:text-blue-200 transition duration-300">Activities</a>
+                <a href="#interests" class="hover:text-blue-200 transition duration-300">Interests</a>
+                <a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-800 p-4 space-y-2">
+            <a href="#about" class="block py-2 px-4 hover:bg-blue-700 rounded-md transition duration-300">About</a>
+            <a href="#experience" class="block py-2 px-4 hover:bg-blue-700 rounded-md transition duration-300">Experience</a>
+            <a href="#skills" class="block py-2 px-4 hover:bg-blue-700 rounded-md transition duration-300">Skills</a>
+            <a href="#education" class="block py-2 px-4 hover:bg-blue-700 rounded-md transition duration-300">Education</a>
+            <a href="#activities" class="block py-2 px-4 hover:bg-blue-700 rounded-md transition duration-300">Activities</a>
+            <a href="#interests" class="block py-2 px-4 hover:bg-blue-700 rounded-md transition duration-300">Interests</a>
+            <a href="#contact" class="block py-2 px-4 hover:bg-blue-700 rounded-md transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6 md:p-8">
+
+        <!-- Hero Section -->
+        <section id="hero" class="bg-white p-8 md:p-12 rounded-xl shadow-lg mb-12 flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-8">
+            <div class="md:w-2/3">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4 animate-fade-in-down">
+                    Soumya Ranjan Sethy
+                </h1>
+                <p class="text-xl md:text-2xl text-blue-700 font-semibold mb-4 animate-fade-in-down delay-100">
+                    Sourcing Engineer
+                </p>
+                <p class="text-lg text-gray-600 mb-6 animate-fade-in-down delay-200">
+                    Highly motivated and results-oriented professional driving strategic sourcing, optimizing procurement processes, and ensuring robust supply chain management in the dynamic automotive sector.
+                </p>
+                <div class="space-x-4 animate-fade-in-down delay-300">
+                    <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+                        Get In Touch
+                    </a>
+                    <a href="#experience" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+                        View Experience
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/3 flex justify-center md:justify-end mt-8 md:mt-0 animate-fade-in-right">
+                <!-- Profile picture changed to black placeholder -->
+                <img src="PROFILE.jpeg" alt="Soumya Ranjan Sethy Profile" class="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full shadow-xl border-4 border-blue-200">
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="bg-white p-8 md:p-10 rounded-xl shadow-lg mb-12 animate-fade-in-up delay-400">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 section-title">About Me</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                As a highly motivated and results-oriented Sourcing Engineer, I bring a robust foundation in Mechanical Engineering (B.Tech 2024) coupled with specialized expertise in SAP MM & PP. My current role at Neel Metal Products Limited (JBM Group), a crucial supplier to Honda, allows me to actively contribute to strategic sourcing, process optimization, and comprehensive supply chain management. I am adept at applying my technical understanding of CAD and manufacturing processes to pinpoint ideal suppliers, negotiate advantageous terms, and cultivate strong, lasting vendor relationships within the fast-paced automotive industry. My goal is to drive efficiency and ensure the seamless flow of materials that meet the highest quality standards.
+            </p>
+            <div class="mt-6 text-gray-600 flex flex-wrap justify-center md:justify-start gap-4 text-center md:text-left">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                    <span>Bhubaneswar, Odisha</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-phone-alt text-blue-600"></i>
+                    <span>+91-7377311435</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-envelope text-blue-600"></i>
+                    <span>isoumyaranjansethy28@gmail</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="bg-white p-8 md:p-10 rounded-xl shadow-lg mb-12 animate-fade-in-up delay-500">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 section-title">Experience</h2>
+
+            <div class="mb-8 p-6 bg-gray-50 rounded-lg shadow-inner border border-gray-200">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Sourcing Engineer</h3>
+                <p class="text-lg text-blue-600 mb-1">Neel Metal Products Limited (JBM Group)</p>
+                <p class="text-gray-500 mb-4">Bengaluru, Karnataka | February 2024 – Present</p>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                    <li>Led strategic sourcing initiatives for sheet metal and Buyer Owned Property (BOP) parts, ensuring alignment with project timelines and quality standards for critical automotive components.</li>
+                    <li>Executed end-to-end procurement processes, including generating Purchase Orders (PO) and ensuring timely release as per internal approvals, optimizing the supply flow.</li>
+                    <li>Managed vendor relationships proactively and conducted diligent payment follow-ups to foster strong, collaborative partnerships, enhancing supplier loyalty and efficiency.</li>
+                    <li>Administered critical procurement documentation such as purchase orders, SAP costing sheets, approvals, and general purchase agreements, ensuring compliance and accuracy.</li>
+                    <li>Facilitated daily interactions with vendors and internal planning teams for efficient raw material (RM) planning for both suppliers and our manufacturing plant, minimizing delays.</li>
+                    <li>Utilized SAP MM functionalities extensively for creating Info Records, PO creation, amendment of RM prices and BOP, stock reporting, and managing Goods Entry (GE) and Goods Receipt Note (GRN) details.</li>
+                    <li>Leveraged technical expertise and negotiation skills to qualify and select suppliers meeting Honda's stringent material and service standards, ensuring high-quality inputs.</li>
+                    <li>Collaborated cross-functionally with engineering and design teams to understand specific material requirements and identify suitable sourcing solutions, bridging technical and procurement needs.</li>
+                    <li>Oversaw supplier relationships and contracts to ensure a seamless and cost-effective supply chain operation, contributing to overall operational efficiency.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="bg-white p-8 md:p-10 rounded-xl shadow-lg mb-12 animate-fade-in-up delay-600">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 section-title">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- ERP Systems -->
+                <div class="p-6 bg-gray-50 rounded-lg shadow-inner border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2"><i class="fas fa-sitemap text-blue-600"></i> ERP Systems</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>SAP MM (Materials Management)</li>
+                        <li>SAP PP (Production Planning)</li>
+                    </ul>
+                </div>
+                <!-- CAD Expertise -->
+                <div class="p-6 bg-gray-50 rounded-lg shadow-inner border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2"><i class="fas fa-drafting-compass text-blue-600"></i> CAD Expertise</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>AutoCAD</li>
+                        <li>CATIA</li>
+                        <li>Ansys</li>
+                    </ul>
+                </div>
+                <!-- Manufacturing -->
+                <div class="p-6 bg-gray-50 rounded-lg shadow-inner border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2"><i class="fas fa-industry text-blue-600"></i> Manufacturing</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>Advanced Manufacturing Processes</li>
+                    </ul>
+                </div>
+                <!-- Software Proficiency -->
+                <div class="p-6 bg-gray-50 rounded-lg shadow-inner border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2"><i class="fas fa-laptop-code text-blue-600"></i> Software Proficiency</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>MS Office (Word, Excel, PowerPoint)</li>
+                    </ul>
+                </div>
+                <!-- Sourcing & Procurement (Implicit from experience) -->
+                <div class="p-6 bg-gray-50 rounded-lg shadow-inner border border-gray-200">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2"><i class="fas fa-handshake text-blue-600"></i> Sourcing & Procurement</h3>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                        <li>Strategic Sourcing</li>
+                        <li>Vendor Management</li>
+                        <li>Negotiation</li>
+                        <li>Supply Chain Optimization</li>
+                        <li>Procurement Processes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="bg-white p-8 md:p-10 rounded-xl shadow-lg mb-12 animate-fade-in-up delay-700">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 section-title">Education</h2>
+
+            <div class="mb-6 p-6 bg-gray-50 rounded-lg shadow-inner border border-gray-200">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Bachelor of Technology in Mechanical Engineering</h3>
+                <p class="text-lg text-blue-600 mb-1">GIET University</p>
+                <p class="text-gray-500">Gunupur, Odisha | Graduated: 2024</p>
+                <!-- Add relevant coursework or projects if desired -->
+            </div>
+
+            <div class="p-6 bg-gray-50 rounded-lg shadow-inner border border-gray-200">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">12th Grade</h3>
+                <p class="text-lg text-blue-600 mb-1">College of Basic Science and Humanities</p>
+                <p class="text-gray-500">Bhubaneswar, Odisha | 2018 – 2020</p>
+            </div>
+        </section>
+
+        <!-- Leadership & Extracurricular Activities Section -->
+        <section id="activities" class="bg-white p-8 md:p-10 rounded-xl shadow-lg mb-12 animate-fade-in-up delay-800">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 section-title">Leadership & Extracurricular Activities</h2>
+
+            <div class="mb-6 p-6 bg-gray-50 rounded-lg shadow-inner border border-gray-200">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2 flex items-center gap-2"><i class="fas fa-users text-blue-600"></i> NSS Coordinator</h3>
+                <p class="text-gray-500 mb-2">2022 - 2024</p>
+                <p class="text-gray-700">Actively coordinated and led various community service initiatives, fostering teamwork and social responsibility among student volunteers. Organized events aimed at local community development and awareness campaigns.</p>
+            </div>
+
+            <div class="p-6 bg-gray-50 rounded-lg shadow-inner border border-gray-200">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2 flex items-center gap-2"><i class="fas fa-cogs text-blue-600"></i> MESA Coordinator</h3>
+                <p class="text-gray-500 mb-2">2022 - 2024</p>
+                <p class="text-gray-700">Managed and organized events for the Mechanical Engineering Student Association (MESA), promoting technical knowledge sharing, skill development workshops, and student engagement within the department.</p>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="interests" class="bg-white p-8 md:p-10 rounded-xl shadow-lg mb-12 animate-fade-in-up delay-900">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 section-title">Interests</h2>
+            <div class="flex flex-wrap items-center gap-4 text-gray-700">
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full shadow-md flex items-center gap-2">
+                    <i class="fas fa-camera text-blue-600"></i> Photography
+                </span>
+                <!-- Add more interests if you have them, e.g., -->
+                <!-- <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full shadow-md flex items-center gap-2">
+                    <i class="fas fa-book-open text-blue-600"></i> Reading
+                </span>
+                <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full shadow-md flex items-center gap-2">
+                    <i class="fas fa-hiking text-blue-600"></i> Hiking
+                </span> -->
+            </div>
+            <div class="mt-6 p-4 bg-gray-50 rounded-lg shadow-inner border border-gray-200">
+                <p class="text-gray-700 italic">Photography allows me to explore creativity and capture the world from unique perspectives, complementing my analytical approach to engineering challenges.</p>
+                <!-- Optionally add a small gallery here or a link to one -->
+                <!-- <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+                    <img src="https://placehold.co/150x100/d1e0fc/334155?text=Photo+1" alt="Photography example 1" class="w-full h-auto rounded-lg shadow-md">
+                    <img src="https://placehold.co/150x100/d1e0fc/334155?text=Photo+2" alt="Photography example 2" class="w-full h-auto rounded-lg shadow-md">
+                    <img src="https://placehold.co/150x100/d1e0fc/334155?text=Photo+3" alt="Photography example 3" class="w-full h-auto rounded-lg shadow-md">
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-gradient-to-br from-blue-700 to-indigo-800 text-white p-8 md:p-10 rounded-xl shadow-lg mb-12 animate-fade-in-up delay-1000">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 relative inline-block pb-2">
+                Get In Touch
+                <span class="block absolute bottom-0 left-0 w-2/3 h-1 bg-white rounded-full"></span>
+            </h2>
+            <p class="text-lg mb-8">
+                I'm always open to new opportunities and collaborations. Feel free to reach out!
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                <div class="flex items-center gap-3 text-xl">
+                    <i class="fas fa-map-marker-alt text-blue-200"></i>
+                    <span>Bhubaneswar, Odisha</span>
+                </div>
+                <a href="tel:XXX-XXX-XXXX" class="flex items-center gap-3 text-xl hover:text-blue-200 transition duration-300">
+                    <i class="fas fa-phone-alt text-blue-200"></i>
+                    <span>+91-7377311435</span>
+                </a>
+                <a href="mailto:youremail@example.com" class="flex items-center gap-3 text-xl hover:text-blue-200 transition duration-300">
+                    <i class="fas fa-envelope text-blue-200"></i>
+                    <span>isoumyaranjansethy28@gmail.com</span>
+                </a>
+            </div>
+            <div class="mt-8">
+                <a href="Soumya CV.pdf" class="inline-block bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300">
+                    My Resume
+                </a>
+                <!-- Replace "#" with the actual link to your resume PDF -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 text-center shadow-inner">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Soumya Ranjan Sethy. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="www.linkedin.com/in/soumya-ranjan-sethy-6978aa1b6" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin text-2xl"></i></a>
+                <!-- Replace "#" with your LinkedIn profile link -->
+                <!-- Add other social media links if applicable -->
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu after clicking a link
+                if (window.innerWidth < 768) { // Check if it's a mobile view
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Mobile menu toggle functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
